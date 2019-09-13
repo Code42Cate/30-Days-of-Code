@@ -19,7 +19,7 @@ fn main() {
             println!("{}", "Hello, World.");
             println!("{}", input);
         }
-        Err(error) => println!("error: {}", error);
+        Err(error) => println!("error: {}", error),
     }
 }
 ```
