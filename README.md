@@ -138,6 +138,28 @@ main = do
   -- let tip = (\x y -> x * y / 100) (mealCost) (tipPercent)
   -- let tax = (\x y -> x * y / 100) (mealCost) (taxPercent)
 ```
+## Day 3:
+Goal: 
+Given an integer *n*, perform the following conditional actions:
+- If  is odd, print Weird
+- If  is even and in the inclusive range of  to , print Not Weird
+- If  is even and in the inclusive range of  to , print Weird
+- If  is even and greater than , print Not Weird
 
-
+Haskell:
+```Haskell
+main = do
+  n <- readLn :: IO Int
+  if n `mod` 2 > 0
+      then putStrLn "Weird"
+      else if n > 1 && n < 6
+          then putStrLn "Not Weird"
+          else if n > 5 && n < 21
+              then putStrLn "Weird"
+              else putStrLn "Not Weird"
+```
+Rust:
+```Rust
+// Coming tomorrow:D
+```
 If you want to participate too: https://www.hackerrank.com/challenges/30-hello-world
