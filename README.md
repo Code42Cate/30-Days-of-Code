@@ -253,4 +253,39 @@ Haskell:
 ```Haskell
 -- Haskell got disabled for this challenge because it isn't object oriented:(
 ```
+
+## Day 5:
+Goal: Given an Integer n, print Print 10 lines of output; each line i (where 0 < i < 11 ) contains the result of n x i in the form:
+    n x i = result
+    ...
+    n x 10 = result
+
+Haskell:
+```Haskell
+{-# LANGUAGE FlexibleInstances, UndecidableInstances, DuplicateRecordFields #-}
+
+module Main where
+
+import Control.Monad
+import Data.Array
+import Data.Bits
+import Data.List
+import Data.List.Split
+import Data.Set
+import Debug.Trace
+import System.Environment
+import System.IO
+import System.IO.Unsafe
+
+main :: IO()
+main = do
+    n <- readLn :: IO Int
+    forM_ [1..10] $ \factor -> do
+        putStrLn(show(n) ++ " x " ++ show(factor) ++ " = " ++ show(n*factor))
+        
+```
+Rust:
+```Rust
+// Coming later:D
+```
 If you want to participate too: https://www.hackerrank.com/challenges/30-hello-world
