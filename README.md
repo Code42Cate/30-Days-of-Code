@@ -249,5 +249,8 @@ fn main() {
 }
 
 ```
-
+Haskell:
+```Haskell
+-- Haskell got disabled for this challenge because it isn't object oriented:(
+```
 If you want to participate too: https://www.hackerrank.com/challenges/30-hello-world
